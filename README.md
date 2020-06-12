@@ -25,7 +25,7 @@ Conteiner criado para trabalhar com Laravel e MySQL.
 
 4. Será necessário gerar a appkey do laravel. Execute o seguinte comando.
 
-> docker exec laravel-app php artisan key:generate
+   > docker exec laravel-app php artisan key:generate
 
 Pronto, seu servidor laravel e o laravel já estão configurados e pronto para uso.
 Acesse: http://localhost:8000/
