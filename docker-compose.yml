@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  php5:
+    image: netocosta/laravel
+    container_name: laravel-app
+    ports:
+      - "8000:80"
+    volumes:
+      - ./www:/var/www/html
+    depends_on:
+      - mysql
+    networks:
+      - network_private
+
+  mysql:
+    image: mysql:5.7
+    container_name: laravel-mysql
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=laravel
+    networks:
+      - network_private
+
+networks:
+  network_private:
+    driver: bridge
