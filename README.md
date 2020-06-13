@@ -49,7 +49,7 @@ Acesse pelo navegador: http://localhost:8000/
 
 ### Volumes do Docker
 
-O docker-compose está configurado para que os arquivos principais sejam "hospedados" no seu computador. Ou seja, se a qualquer momento você quiser remover os containers, suas alterações no banco de dados e nos arquivos do php5 e php7, ainda estarão disponíveis.
+O docker-compose está configurado para que os arquivos principais sejam "hospedados" no seu computador. Ou seja, se a qualquer momento você quiser remover os containers, suas alterações no banco de dados e nos arquivos do laravel, ainda estarão disponíveis.
 
 A qualquer momento, basta efetuar o passos 3 e 4 do "Como Instalar" e tudo estará funcionando da mesma maneira.
 
